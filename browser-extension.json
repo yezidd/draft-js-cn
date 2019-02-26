@@ -1,7 +1,6 @@
 {
-  "allowDirectMerges": false,
+  "allowDirectMerges": ["0.11.0-beta"],
   "allowBotCommands": false,
   "internalRepository": "www",
-  "cannedReplies": {
-  }
+  "cannedReplies": {}
 }
