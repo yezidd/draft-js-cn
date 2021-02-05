@@ -9,7 +9,7 @@ const {fbInternalOnly} = require('internaldocs-fb-helpers');
 
 module.exports = {
   docs: {
-    'Quick Start': [
+    'Quick Start(快速开始)': [
       'getting-started',
       'quickstart-api-basics',
       'quickstart-rich-styling',
