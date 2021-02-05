@@ -59,22 +59,31 @@ function Home() {
           <div className="row">
             <div className="col">
               <h3>Extensible and Customizable</h3>
+              <h3>可扩展的和可定制的</h3>
               <p>
                 We provide the building blocks to enable the creation of a broad
                 variety of rich text composition experiences, from basic text
                 styles to embedded media.
               </p>
+              <p>
+                我们提供了构建块为了能够提供一个丰富多样的富文本文字创作经验，从基本的文字样式到嵌入式的媒体模块
+              </p>
             </div>
             <div className="col">
               <h3>Declarative Rich Text</h3>
+              <h3>声明式编程的富文本编辑器</h3>
               <p>
                 Draft.js fits seamlessly into React applications, abstracting
                 away the details of rendering, selection, and input behavior
                 with a familiar declarative API.
               </p>
+              <p>
+                Draft.js无缝地融入React应用程序，用一个熟悉的声明性API抽象出渲染、选择和输入行为的细节。
+              </p>
             </div>
             <div className="col">
               <h3>Immutable Editor State</h3>
+              <h3>immutable编辑器的状态</h3>
               <p>
                 The Draft.js model is built with{' '}
                 <a
@@ -85,6 +94,16 @@ function Home() {
                 </a>
                 , offering an API with functional state updates and aggressively
                 leveraging data persistence for scalable memory usage.
+              </p>
+              <p>
+                Draft.js 的模型是基于{' '}
+                <a
+                  href="https://immutable-js.github.io/immutable-js/"
+                  target="_blank"
+                  rel="noreferrer noopener">
+                  immutable-js
+                </a>
+                {' '}构建的, 一个提供了一个具有功能状态更新和积极利用数据持久性来扩展内存使用的API的库。
               </p>
             </div>
           </div>
@@ -98,9 +117,7 @@ function Home() {
           <ClientOnly fallback={null}>
             <div className="col col--6 col--offset-3">
               <h2>尝试一下!</h2>
-              <p>
-                这是一个基于Draft.js的简单的富文本编辑器例子
-              </p>
+              <p>这是一个基于Draft.js的简单的富文本编辑器例子</p>
               <div id="rich-example">
                 <DraftEditorExample />
               </div>
@@ -111,7 +128,7 @@ function Home() {
           <Link
             className="button button--primary button--lg"
             to={useBaseUrl('docs/getting-started')}>
-            Learn more about Draft.js
+            学习更多有关 Draft.js
           </Link>
         </div>
       </div>

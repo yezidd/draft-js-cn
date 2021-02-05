@@ -31,17 +31,17 @@ module.exports = {
   themeConfig: {
     disableDarkMode: true,
     navbar: {
-      title: 'Draft.js',
+      title: 'Draft.js中文网',
       logo: {
         alt: 'Draft.js Logo',
         src: 'img/draftjs-logo.svg'
       },
       links: [{
         to: 'docs/getting-started',
-        label: 'Docs',
+        label: '文档',
         position: 'right'
       }, {
-        href: 'https://github.com/facebook/draft-js',
+        href: 'https://github.com/yezidd/draft-js-cn',
         label: 'GitHub',
         position: 'right'
       }, ...fbInternalOnly([{
@@ -50,26 +50,19 @@ module.exports = {
         "position": "right"
       }])]
     },
-    algolia: {
-      apiKey: 'ae94c9e3ee00ea8edddd484adafc37cd',
-      indexName: 'draft-js'
-    },
-    googleAnalytics: {
-      trackingID: 'UA-44373548-19'
-    },
     footer: {
       style: 'dark',
       links: [{
         title: 'Docs',
         items: [{
-          label: 'Getting Started',
+          label: '开始入门',
           to: 'docs/getting-started'
         }, {
-          label: 'API Reference',
+          label: 'API 参考',
           to: 'docs/api-reference-editor'
         }]
       }, {
-        title: 'Community',
+        title: '社区',
         items: [{
           label: 'Stack Overflow',
           href: 'https://stackoverflow.com/questions/tagged/draftjs'
@@ -78,10 +71,13 @@ module.exports = {
           href: 'https://twitter.com/draft_js'
         }]
       }, {
-        title: 'More',
+        title: '更多',
         items: [{
-          label: 'GitHub',
+          label: '英文github地址',
           href: 'https://github.com/facebook/draft-js'
+        },{
+          label: '英文官网地址',
+          href: 'https://draftjs.org/'
         }]
       }],
       logo: {
@@ -89,7 +85,7 @@ module.exports = {
         src: '/img/oss_logo.png',
         href: 'https://opensource.facebook.com/'
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`
+      copyright: `Copyright © ${new Date().getFullYear()} youhai, Inc.`
     }
   },
   plugins: [require.resolve('docusaurus-plugin-internaldocs-fb')],
