@@ -50,7 +50,7 @@ Before getting started, please be aware that we recently changed the API of
 Entity storage in Draft. Draft.js version `v0.10.0` and `v0.11.0` support both the old
 and new API. Following that up will be `v0.12.0` which will remove the old API.
 
-> 
+> 在开始之前，请注意我们最近修改了Draft中的实体(Entity)存储API。Draft.js ' v0.10.0 ' 和' v0.11.0 '版本支持新的和旧的api.接下来是' v0.12.0 '，它将删除旧的API。
 
 ## Usage
 
@@ -79,6 +79,8 @@ ReactDOM.render(<MyEditor />, document.getElementById('container'));
 
 Since the release of React 16.8, you can use [Hooks](https://reactjs.org/docs/hooks-intro.html) as a way to work with `EditorState` without using a class.
 
+> 自从React 16.8 版本发布,你能够使用[Hooks](https://reactjs.org/docs/hooks-intro.html), 一种不依赖class类但是 `EditorState` 依旧能够使用的方式。
+
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -98,10 +100,16 @@ ReactDOM.render(<MyEditor />, document.getElementById('container'));
 
 Because Draft.js supports unicode, you must have the following meta tag in the `<head></head>` block of your HTML file:
 
+> 由于Draft.js 支持unicode,所以你必须下列的meta tag 在你的 HTMl 文件的 `<head></head>` 标签块内
+
 ```html
 <meta charset="utf-8" />
 ```
 
 `Draft.css` should be included when rendering the editor. Learn more about [why](/docs/advanced-topics-issues-and-pitfalls#missing-draftcss).
 
+> Draft.css 需要在编辑器渲染的时候被包含进来。了解更多关于 [为什么需要这样](/docs/advanced-topics-issues-and-pitfalls#missing-draftcss)。
+
 Next, let's go into the basics of the API and learn what else you can do with Draft.js.
+
+> 下一步，让我们走进基本的API并且学习其他Draft.js能做的事情.
