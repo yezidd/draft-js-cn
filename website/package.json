@@ -13,7 +13,9 @@
     "draft-js": "0.11.5",
     "internaldocs-fb-helpers": "^1.1.0",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "ssh2": "^0.8.9",
+    "ssh2-sftp-client": "^6.0.1"
   },
   "browserslist": {
     "production": [

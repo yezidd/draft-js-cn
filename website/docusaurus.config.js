@@ -10,10 +10,10 @@ const {
  */
 module.exports = {
   title: 'Draft.js',
-  tagline: 'Rich Text Editor Framework for React',
-  url: 'https://draftjs.org',
+  tagline: '富文本编辑器框架 for React',
+  url: 'https://draftjs.cn',
   baseUrl: '/',
-  organizationName: 'facebook',
+  organizationName: '幽海(个人)',
   projectName: 'draft-js',
   favicon: 'img/draftjs-logo.ico',
   presets: [['@docusaurus/preset-classic', {

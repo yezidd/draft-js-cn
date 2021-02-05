@@ -31,16 +31,6 @@ function Home() {
 
   return (
     <Layout permalink="/" description={siteConfig.tagline}>
-      <div className={styles.blm}>
-        Black Lives Matter.{' '}
-        <a
-          target="_blank"
-          rel="noopener"
-          rel="noreferrer"
-          href="https://support.eji.org/give/153413/#!/donation/checkout">
-          Support&nbsp;the&nbsp;Equal&nbsp;Justice&nbsp;Initiative.
-        </a>
-      </div>
       <div className="hero hero--primary shadow--lw">
         <div className="container">
           <div className="row">
@@ -51,7 +41,7 @@ function Home() {
                 <Link
                   className="button button--secondary button--lg"
                   to={useBaseUrl('docs/getting-started')}>
-                  Get Started
+                  开始入门
                 </Link>
               </div>
             </div>
@@ -107,9 +97,9 @@ function Home() {
           )}>
           <ClientOnly fallback={null}>
             <div className="col col--6 col--offset-3">
-              <h2>Try it out!</h2>
+              <h2>尝试一下!</h2>
               <p>
-                Here's a simple example of a rich text editor built in Draft.js.
+                这是一个基于Draft.js的简单的富文本编辑器例子
               </p>
               <div id="rich-example">
                 <DraftEditorExample />
