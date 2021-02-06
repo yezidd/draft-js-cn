@@ -10,7 +10,7 @@ buildAsset();
 function buildAsset() {
   const {spawn} = require('child_process');
   const ls = spawn('npm', ['run', 'build'], {
-    swd: path.resolve(__dirname, '../'),
+    cwd: path.resolve(__dirname, '../'),
   });
 
   ls.stdout.on('data', data => {
