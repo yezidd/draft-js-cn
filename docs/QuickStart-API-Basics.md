@@ -1,6 +1,6 @@
 ---
 id: quickstart-api-basics
-title: API Basics
+title: API Basics(基本的API)
 ---
 
 This document provides an overview of the basics of the `Draft` API. A
