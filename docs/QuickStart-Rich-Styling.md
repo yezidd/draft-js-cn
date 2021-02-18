@@ -1,27 +1,39 @@
 ---
 id: quickstart-rich-styling
-title: Rich Styling
+title: Rich Styling(丰富的样式)
 ---
 
 Now that we have established the basics of the top-level API, we can go a step
 further and examine how basic rich styling can be added to a `Draft` editor.
 
+> 现在，我们已经建立了编辑器顶级API的基础，我们可以进一步研究如何将基本的富文本样式添加到Draft编辑器中。
+
 A [rich text example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/rich)
 is also available to follow along.
+
+> 本文还提供了一个[富文本示例](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/rich)。
 
 ## EditorState: Yours to Command
 
 The previous article introduced the `EditorState` object as a snapshot of the full state of the editor, as provided by the `Editor` core via the `onChange` prop.
 
+> 前一篇文章介绍了EditorState对象，它是编辑器完整状态的快照，由编辑器core通过onChange属性方法提供状态更新。
+
 However, since your top-level React component is responsible for maintaining the state, you also have the freedom to apply changes to that `EditorState` object in any way you see fit.
 
+> 然而,因为你顶级的React 组件负责维护 state, 你可以很轻松的将各种 changes 以你认为合适的方式 应用到EditorState 对象上去.
+
 For inline and block style behavior, for example, the [`RichUtils`](/docs/api-reference-rich-utils) module provides a number of useful functions to help manipulate state.
+
+> 例如,针对 行内元素 或者 块级元素的 样式表现, [RichUtils模块](/docs/api-reference-rich-utils)提供了许多有用的函数来帮助处理状态。
 
 Similarly, the [`Modifier`](/docs/api-reference-modifier) module also provides a
 number of common operations that allow you to apply edits, including changes
 to text, styles, and more. This module is a suite of edit functions that
 compose simpler, smaller edit functions to return the desired `EditorState`
 object.
+
+> 
 
 For this example, we'll stick with `RichUtils` to demonstrate how to apply basic
 rich styling within the top-level component.

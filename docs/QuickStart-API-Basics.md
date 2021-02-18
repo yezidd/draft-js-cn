@@ -42,23 +42,36 @@ const MyInput = () => {
 The top-level component can maintain control over the input state via this
 `value` state property.
 
+> 顶级受控组件可以通过这个value状态属性来对输入状态进行控制。
+
 ## Controlling Rich Text
 
 In a React rich text scenario, however, there are two clear problems:
 
+> 在一个React的富文本组件场景中,然而,会存在两个比较明显的问题:
+
 1. A string of plaintext is insufficient to represent the complex state of a
    rich editor.
+
+> 纯文本字符串不足以表示富编辑器的复杂状态。
+
 2. There is no such `onChange` event available for a ContentEditable element.
+
+> 在ContentEditable节点中不存在onChange事件可以用。
 
 State is therefore represented as a single immutable
 [EditorState](/docs/api-reference-editor-state) object, and `onChange` is
 implemented within the `Editor` core to provide this state value to the top
 level.
 
+> 因此,State代表了单一的immutable EditorState对象，并且 onChange 是在Editor组件核心中实现的，它将这个状态提供到顶层了。
+
 The `EditorState` object is a complete snapshot of the state of the editor,
 including contents, cursor, and undo/redo history. All changes to content and
 selection within the editor will create new `EditorState` objects. Note that
 this remains efficient due to data persistence across immutable objects.
+
+> 这个EditorState对象是一个完整的 `Editor编辑器`状态的快照，包括了contents(内容),cursor(游标),撤销(undo)/重做(redo) 历史. 所有针对编辑器内容和光标的改变都将重新创建出一个新的EditorState对象。值得注意的是，这依旧会十分高效，因为immutable对象所具有的数据持久特性。
 
 ```js
 import {Editor, EditorState} from 'draft-js';
@@ -75,3 +88,5 @@ const MyInput = () => {
 For any edits or selection changes that occur in the editor DOM, your `onChange`
 handler will execute with the latest `EditorState` object based on those
 changes.
+
+> 对于Editor组件 DOM中发生的任何编辑和光标选择更改的行为，你的onChange 函数都会响应，并且将基于这些改变，计算和产生出最新的EditorState对象。
