@@ -20,7 +20,7 @@ module.exports = {
     docs: {
       path: '../docs',
       sidebarPath: require.resolve('./sidebars.js'),
-      editUrl: 'https://github.com/facebook/draft-js/edit/master/docs',
+      editUrl: 'https://github.com/yezidd/draft-js-cn/edit/master/docs',
       showLastUpdateAuthor: true,
       showLastUpdateTime: true
     },
