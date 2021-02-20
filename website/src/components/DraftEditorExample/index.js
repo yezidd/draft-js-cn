@@ -24,6 +24,7 @@ function RichEditorExample(props) {
 
   const handleKeyCommand = useCallback(
     (command, editorState) => {
+      console.log(command,'---',editorState)
       const newState = RichUtils.handleKeyCommand(editorState, command);
       if (newState) {
         setEditorState(newState);

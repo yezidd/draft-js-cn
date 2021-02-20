@@ -24,8 +24,8 @@
     "pretest": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
     "build": "gulp",
     "dev": "gulp dev",
-    "deploy":"yarn format-docs && node website/script/index.js",
-    "start:doc":"cd website && yarn start",
+    "deploy": "yarn format-docs && node website/script/index.js",
+    "start:doc": "cd website && yarn start",
     "postbuild": "node node_modules/fbjs-scripts/node/check-lib-requires.js lib",
     "lint": "eslint .",
     "lint-docs": "alex . && yarn format-docs:diff",
@@ -39,7 +39,8 @@
   "dependencies": {
     "fbjs": "^2.0.0",
     "immutable": "~3.7.4",
-    "object-assign": "^4.1.1"
+    "object-assign": "^4.1.1",
+    "react-github-btn": "^1.2.0"
   },
   "peerDependencies": {
     "react": ">=0.14.0",

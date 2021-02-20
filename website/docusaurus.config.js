@@ -9,8 +9,8 @@ const {
  * LICENSE file in the root directory of this source tree.
  */
 module.exports = {
-  title: 'Draft.js',
-  tagline: '富文本编辑器框架 for React',
+  title: 'Draft.js中文网',
+  tagline: '使用React来编写富文本编辑器的框架',
   url: 'https://draftjs.cn',
   baseUrl: '/',
   organizationName: '幽海(个人)',

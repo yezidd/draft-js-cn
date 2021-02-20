@@ -9,9 +9,9 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-
+import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
-
+import GitHubButton from 'react-github-btn';
 import classnames from 'classnames';
 
 import DraftEditorExample from '../components/DraftEditorExample';
@@ -24,15 +24,33 @@ function ClientOnly({children, fallback}) {
   }
   return children;
 }
-
+function GitHubStarButton() {
+  return (
+    <div className="github-button">
+      <GitHubButton
+        href="https://github.com/yezidd/draft-js-cn"
+        data-icon="octicon-star"
+        data-size="large"
+        aria-label="Star facebook/react-native on GitHub">
+        Star
+      </GitHubButton>
+    </div>
+  );
+}
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
 
   return (
     <Layout permalink="/" description={siteConfig.tagline}>
+      <Head>
+        <title>Draft.js 中文网 · 使用React来编写富文本编辑器的框架</title>
+      </Head>
       <div className="hero hero--primary shadow--lw">
         <div className="container">
+          <div className={styles.socialLinks}>
+            <GitHubStarButton />
+          </div>
           <div className="row">
             <div className="col">
               <h1 className="hero__title">{siteConfig.title}</h1>
@@ -102,8 +120,9 @@ function Home() {
                   target="_blank"
                   rel="noreferrer noopener">
                   immutable-js
-                </a>
-                {' '}构建的, 一个提供了一个具有功能状态更新和积极利用数据持久性来扩展内存使用的API的库。
+                </a>{' '}
+                构建的,
+                一个提供了一个具有功能状态更新和积极利用数据持久性来扩展内存使用的API的库。
               </p>
             </div>
           </div>

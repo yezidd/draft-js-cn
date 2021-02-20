@@ -9,12 +9,12 @@ const {fbInternalOnly} = require('internaldocs-fb-helpers');
 
 module.exports = {
   docs: {
-    'Quick Start(快速开始)': [
+    'Quick Start(快速 开始)': [
       'getting-started',
       'quickstart-api-basics',
       'quickstart-rich-styling',
     ],
-    'Advanced Topics': [
+    'Advanced Topics(高级 主题)': [
       'advanced-topics-entities',
       'v0-10-api-migration',
       'advanced-topics-decorators',
@@ -29,7 +29,7 @@ module.exports = {
       'advanced-topics-editorstate-race-conditions',
       'advanced-topics-issues-and-pitfalls',
     ],
-    'API Reference': [
+    'API Reference(API 参考)': [
       'api-reference-editor',
       'api-reference-editor-change-type',
       'api-reference-editor-state',
