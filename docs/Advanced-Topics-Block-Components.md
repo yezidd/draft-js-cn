@@ -1,27 +1,37 @@
 ---
 id: advanced-topics-block-components
-title: Custom Block Components
+title: Custom Block Components(自定义块组件)
 ---
 
 Draft is designed to solve problems for straightforward rich text interfaces
 like comments and chat messages, but it also powers richer editor experiences
 like [Facebook Notes](https://www.facebook.com/notes/).
 
+> Draft 被设计出来就是为了解决直接的富文本界面问题(比如评论和聊天消息),但它也支持更丰富的编辑体验(像 [Facebook Notes](https://www.facebook.com/notes/))
+
 Users can embed images within their Notes, either loading from their existing
 Facebook photos or by uploading new images from the desktop. To that end,
 the Draft framework supports custom rendering at the block level, to render
 content like rich media in place of plain text.
+
+> 用户需要在他们的笔记中嵌入图片,不管是从他们现有的 Facebook 照片中选择并加载，还是是从桌面中上传新的图片。为此,Draft 框架支持块元素级别的自定义渲染,以渲染富媒体等内容来代替文本显示.
 
 The [TeX editor](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/tex)
 in the Draft repository provides a live example of custom block rendering, with
 TeX syntax translated on the fly into editable embedded formula rendering via the
 [KaTeX library](https://khan.github.io/KaTeX/).
 
+> 在 Draft 的 git 存储库中提供了一个自定义块元素渲染的可运行的例子[TeX editor](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/tex),其中 TeX 语法通过[KaTeX library](https://khan.github.io/KaTeX/)实时转换为可编辑的嵌入式公式块元素渲染。
+
 A [media example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/media) is also
 available, which showcases custom block rendering of audio, image, and video.
 
+> 还有一个[media example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/media)可以获取,它展示了音频、图像和视频的自定义块渲染。
+
 By using a custom block renderer, it is possible to introduce complex rich
 interactions within the frame of your editor.
+
+> 通过使用自定义块元素渲染器,可以在编辑器的框架内引入复杂的富文本交互。
 
 ## Custom Block Components
 

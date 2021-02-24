@@ -1,6 +1,6 @@
 ---
 id: advanced-topics-decorators
-title: Decorators
+title: Decorators(装饰器)
 ---
 
 Inline and block styles aren't the only kind of rich styling that we might
