@@ -135,7 +135,7 @@ function deletePreAsset() {
 
 // 上传打包好的压缩文件
 function uploadZip() {
-  console.log('-开始将文件发送至服务器-');
+  console.log('-开始将文件发送至服务器--');
   const ClientSftp = require('ssh2-sftp-client');
   let sftp = new ClientSftp();
   sftp

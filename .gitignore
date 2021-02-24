@@ -4,6 +4,7 @@ lib/
 build/
 node_modules
 website/src/docs/
+website/script/
 npm-debug.log
 !website/static/
 yarn-error.log
