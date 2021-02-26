@@ -88,5 +88,4 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} 浙ICP备2021004878号`
     }
   },
-  plugins: [require.resolve('docusaurus-plugin-internaldocs-fb')],
 };
