@@ -58,7 +58,7 @@ module.exports = {
           label: '开始入门',
           to: 'docs/getting-started'
         }, {
-          label: 'API 参考',
+          label: 'API参考',
           to: 'docs/api-reference-editor'
         }]
       }, {

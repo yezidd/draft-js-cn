@@ -7,11 +7,15 @@ This article discusses the API and props of the core controlled contentEditable
 component itself, `Editor`. Props are defined within
 [`DraftEditorProps`](https://github.com/facebook/draft-js/blob/master/src/component/base/DraftEditorProps.js).
 
+> 本文讨论核心受控的contentEditable组件,Editor组件本身的API和props.Props定义看这里:[`DraftEditorProps`](https://github.com/facebook/draft-js/blob/master/src/component/base/DraftEditorProps.js)
+
 ## Props
 
 ## Basics
 
 See [API Basics](/docs/quickstart-api-basics) for an introduction.
+
+> 看[API Basics](/docs/quickstart-api-basics)的介绍.
 
 ### `editorState`
 
@@ -21,6 +25,8 @@ editorState: EditorState;
 
 The `EditorState` object to be rendered by the `Editor`.
 
+> 用于 `Editor`渲染的`EditorState`对象.
+
 ### `onChange`
 
 ```js
@@ -29,6 +35,8 @@ onChange: (editorState: EditorState) => void
 
 The `onChange` function to be executed by the `Editor` when edits and selection
 changes occur.
+
+> `Editor` 在当编辑和选择更改发生的时候，`onChange`就会被执行。
 
 ## Presentation (Optional)
 
@@ -40,10 +48,14 @@ placeholder?: string
 
 Optional placeholder string to display when the editor is empty.
 
+> 当编辑器为空时显示的可选占位符字符串。
+
 Note: You can use CSS to style or hide your placeholder as needed. For instance,
 in the [rich editor example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/rich), the placeholder is hidden when the user changes block styling in an empty editor.
 This is because the placeholder may not line up with the cursor when the style
 is changed.
+
+> 注意:您可以根据需要使用CSS设置样式或者隐藏占位符。例如，在[rich editor example](https://github.com/facebook/draft-js/tree/master/examples/draft-0-10-0/rich)中，当用户在空编辑器中更改块样式时，占位符将被隐藏。这是因为当样式改变时，占位符可能不会与光标对齐。
 
 ### `textAlignment`
 
@@ -54,11 +66,17 @@ textAlignment?: DraftTextAlignment
 Optionally set the overriding text alignment for this editor. This alignment value will
 apply to the entire contents, regardless of default text direction for input text.
 
+> 可选地 设置此编辑器地文本对齐方式.无论输入文本的默认文本方向是怎么样的,此文本对齐值将应用于整个编辑器内容.
+
 You may use this if you wish to center your text or align it flush in one direction
 to fit it within your UI design.
 
+> 如果你想把编辑器的文本居中显示或者对齐到一个方向,使其符合你的UI设计，你可以使用这个属性.
+
 If this value is not set, text alignment will be based on the characters within
 the editor, on a per-block basis.
+
+> 如果未设置此值,则文本对齐将基于编辑器中的字符(在一个基础块元素中)来展示。
 
 ### `textDirectionality`
 
@@ -68,8 +86,12 @@ textDirectionality?: DraftTextDirectionality
 
 Optionally set the overriding text directionality for this editor. The values include 'RTL' for right-to-left text, like Hebrew or Arabic, and 'LTR' for left-to-right text, like English or Spanish. This directionality will apply to the entire contents, regardless of default text direction for input text.
 
+> 可选地，设置编辑器的文本方向.这些值包括从右到左的文本(如希伯来语或阿拉伯语)的'RTL'和从左到右的文本(如英语或西班牙语)的'LTR'。这种方向性将应用于整个内容，而不管输入文本的默认文本方向.
+
 If this value is not set, text directionality will be based on the characters
 within the editor, on a per-block basis.
+
+> 如果未设置此值，则文本对齐将基于编辑器中的字符(在一个基础块元素中)来展示。
 
 ### `blockRendererFn`
 
@@ -78,6 +100,8 @@ blockRendererFn?: (block: ContentBlock) => ?Object
 ```
 
 Optionally set a function to define custom block rendering. See [Advanced Topics: Block Components](/docs/advanced-topics-block-components) for details on usage.
+
+> 可选地,设置一个函数来定义自定义块元素渲染。有关使用的详细信息，请参阅[Advanced Topics: Block Components](/docs/advanced-topics-block-components).
 
 ### `blockRenderMap`
 
@@ -88,6 +112,8 @@ blockRenderMap?: DraftBlockRenderMap
 Provide a map of block rendering configurations. Each block type maps to element tag and an optional react element wrapper. This configuration is used for both rendering and paste processing. See
 [Advanced Topics: Custom Block Rendering](/docs/advanced-topics-custom-block-render-map) for details on usage.
 
+> 此属性提供了一个块元素渲染映射的配置.每个块类型元素对应着映射中的元素标记和一个可选的react元素包装器。此配置用于渲染和粘贴处理。有关使用的详细信息，请参阅[Advanced Topics: Custom Block Rendering](/docs/advanced-topics-custom-block-render-map)。
+
 ### `blockStyleFn`
 
 ```js
@@ -96,6 +122,8 @@ blockStyleFn?: (block: ContentBlock) => string
 
 Optionally set a function to define class names to apply to the given block when it is rendered. See [Advanced Topics: Block Styling](/docs/advanced-topics-block-styling) for details on usage.
 
+> 可选地,设置一个函数来定义样式类名，以便在渲染给定块类型元素时将其样式应用于该块类型元素。有关使用的详细信息，请参阅[Advanced Topics: Block Styling](/docs/advanced-topics-block-styling)。
+
 ### customStyleMap
 
 ```js
@@ -103,6 +131,8 @@ customStyleMap?: Object
 ```
 
 Optionally define a map of inline styles to apply to spans of text with the specified style. See [Advanced Topics: Inline Styles](/docs/advanced-topics-inline-styles) for details on usage.
+
+> 
 
 ### `customStyleFn`
 
