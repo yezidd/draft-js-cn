@@ -132,7 +132,7 @@ customStyleMap?: Object
 
 Optionally define a map of inline styles to apply to spans of text with the specified style. See [Advanced Topics: Inline Styles](/docs/advanced-topics-inline-styles) for details on usage.
 
-> 
+> 可选地
 
 ### `customStyleFn`
 
